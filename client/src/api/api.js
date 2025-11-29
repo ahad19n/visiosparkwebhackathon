@@ -25,7 +25,7 @@ api.interceptors.request.use(
     return config;
   },
   (error) => {
-    // this ensures that the error is passed down to the catch block handler in the code 1.e, (AuthProvider.jsx, Signup.jsx, Login.jsx)
+    // this ensures that the error is passed  down to the catch block handler in the code 1.e, (AuthProvider.jsx, Signup.jsx, Login.jsx)
     return Promise.reject(error);
   }
 );
