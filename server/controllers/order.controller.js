@@ -26,7 +26,6 @@ const placeOrder = async (req, res) => {
     }
 
     // Pricing validation removed - all calculations done server-side for security
-
     // Verify user exists in database
     const user = await userModel
       .findOne({ email: userInfo.email })
