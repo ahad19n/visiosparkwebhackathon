@@ -22,7 +22,7 @@ const verifyTokenMiddleware = async (req, res, next) => {
       });
     }
 
-    // verify token
+    // verify  token
     const decoded = jwt.verify(token, process.env.JWT_KEY);
 
     // Attach the decoded data (userInfo) to the request object
