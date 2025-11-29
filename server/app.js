@@ -19,6 +19,8 @@ app.post(
   handleStripeWebhook
 );
 
+// Fix cors error
+
 // Import middlewares and executes them
 require("./middlewares/index.middleware.js")(app);
 
