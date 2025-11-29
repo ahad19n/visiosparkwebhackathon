@@ -12,6 +12,7 @@ const {
 
 // All cart routes require authentication
 router.use(verifyTokenMiddleware);
+//check the cart data first
 
 router.post("/", getCart);
 router.put("/update", updateCartItem);
