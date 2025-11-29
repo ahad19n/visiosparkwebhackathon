@@ -174,7 +174,6 @@ const createProduct = async (req, res) => {
   try {
     // Cloudinary returns the URL in req.file.path
     const imageUrl = req.file ? req.file.path : null;
-
     // Remove productID from required fields validation since it's auto-generated
     if (
       !req.body.name ||
