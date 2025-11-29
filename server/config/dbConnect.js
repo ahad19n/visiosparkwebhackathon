@@ -8,7 +8,8 @@ let isConnected = false;
 const dbConnect = async () => {
   try {
     if (!isConnected) {
-      await mongoose.connect(`${MONGODB_URI}`); // database name is in connection String
+      // database name is in connection String
+      await mongoose.connect(`${MONGODB_URI}`);
       isConnected = true;
       console.log(
         "Connecting to MongoDB:",
