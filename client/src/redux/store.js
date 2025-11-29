@@ -7,7 +7,7 @@ import userHistoryReducer from "./Slice/userHistorySlice";
 
 const store = configureStore({
   reducer: {
-    shop: shopReducer, // best practice is that Key should match the slice name in the reducer
+    shop: shopReducer, // best practice is that Key should m atch the slice name in the reducer
     cart: cartReducer,
     dashboard: dashboardReducer,
     home: homeReducer,
