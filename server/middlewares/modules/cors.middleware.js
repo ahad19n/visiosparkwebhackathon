@@ -10,7 +10,8 @@ const allowedOrigins = [
   "https://localhost:3000",
 ].filter(Boolean);
 
-// Enhanced CORS middleware for cross-domain production
+// Enhanced CORS middleware for cross-domain 
+// production
 const corsMiddleware = cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (mobile apps, Postman, etc.)
