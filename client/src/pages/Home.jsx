@@ -20,7 +20,8 @@ const Home = () => {
   const clothesRef = useRef(null);
   const actionFiguresRef = useRef(null);
 
-  // Reset loading state when component mounts
+  // Reset loading state when
+  // component mounts
   useEffect(() => {
     dispatch(resetLoadingState());
 
