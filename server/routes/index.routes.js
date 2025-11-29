@@ -13,7 +13,7 @@ const stripeRoutes = require("./modules/stripe.routes.js");
 const cartRoutes = require("./modules/cart.route.js");
 const cleanupRoutes = require("./modules/cleanup.route.js");
 
-// Mount all routers
+// Define all routers
 router.use("/auth", authRoutes);
 router.use("/googleAuth", googleAuthRoutes);
 router.use("/product", productRoutes);
