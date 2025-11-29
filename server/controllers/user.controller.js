@@ -26,6 +26,7 @@ const getUsers = async (req, res) => {
     ) {
       return res.status(403).json({ message: "User is not authorized!" });
     }
+    
     // --- Pagination Logic ---
     const usersPerPage = 20;
     const page = parseInt(currPage, 10) || 1;
