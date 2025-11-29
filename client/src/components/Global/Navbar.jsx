@@ -9,6 +9,7 @@ const Navbar = () => {
   const updatedProfilePic = useSelector(
     (state) => state.dashboard.updatedProfilePic
   );
+  const cartItems = useSelector((state) => state.cart.cartItems);
 
   return (
     <>
@@ -30,8 +31,13 @@ const Navbar = () => {
           <Link to="/shop">
             <img src={assets.shop} alt="shop" />
           </Link>
-          <Link to="/cart">
+          <Link to="/cart" className="relative">
             <img src={assets.cart} alt="cart" />
+            {cartItems.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-pink-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                {cartItems.length > 99 ? "99+" : cartItems.length}
+              </span>
+            )}
           </Link>
           <Link to="/history">
             <img src={assets.history} alt="history" />
