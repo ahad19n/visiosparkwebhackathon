@@ -1,6 +1,8 @@
 import axios from "axios";
 import { clearAllUserData } from "../utils/userSessionManager";
 
+// Created a unified place for the api's
+
 // Use development URL in dev mode, production URL in production mode
 const isDevelopment = import.meta.env.MODE === "development";
 const serverURL = isDevelopment
